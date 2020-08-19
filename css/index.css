@@ -1,0 +1,44 @@
+body {
+    background: rgb(26, 40, 70);
+}
+
+button{
+    border: solid 2px black;
+    font-size: 24px;
+    color: white;
+}
+
+.number {
+    background: rgb(153, 153, 155);
+}
+
+.operator {
+    background: rgb(52, 82, 255);
+}
+
+.calculator {
+    position: center;
+    display: grid;
+    height: 100%;
+    margin: 1rem auto;
+    padding: 60px;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.input {
+    background: white;
+    color: black;
+    font-size: 20px;
+    grid-row: 1/1;
+    grid-column: 1/span 4;
+}
+
+.equal {
+    background: rgb(52, 82, 255);
+    grid-row: 6/6;
+    grid-column: 1/span 4;
+}
