@@ -1,5 +1,6 @@
 body {
-    background: rgb(26, 40, 70);
+    background: white;
+    font-family: Helvetica, sans-serif;
 }
 
 button{
@@ -10,20 +11,48 @@ button{
 
 .number {
     background: rgb(153, 153, 155);
+    box-shadow: 2px 2px 1px rgb(63, 63, 63);
+    border-radius: 8px;
+}
+.number:hover {
+    background-color:rgb(15, 23, 254);
+}
+
+.number:active {
+    background-color: cyan;
 }
 
 .operator {
-    background: rgb(52, 82, 255);
+    background: rgb(53, 53, 53);
+    box-shadow: 2px 2px 1px rgb(63, 63, 63);
+    border-radius: 8px;
+}
+
+.operator:hover {
+    background-color:rgb(15, 23, 254);
+}
+
+.operator:active {
+    background-color: cyan;
 }
 
 .calculator {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff32b4+0,ff8228+22,ffff30+43,78ff30+62,3059ff+81,7200ff+100 */
+    background: #ff32b4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff32b4 0%, #ff8228 22%, #ffff30 43%, #78ff30 62%, #3059ff 81%, #7200ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff32b4 0%,#ff8228 22%,#ffff30 43%,#78ff30 62%,#3059ff 81%,#7200ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff32b4 0%,#ff8228 22%,#ffff30 43%,#78ff30 62%,#3059ff 81%,#7200ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff32b4', endColorstr='#7200ff',GradientType=0 ); /* IE6-9 */    
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px rgb(36, 36, 36);
     position: center;
     display: grid;
     height: 100%;
-    margin: 1rem auto;
-    padding: 60px;
+    margin: 10% auto;
+    padding: 30px;
     width: 400px;
-    height: 400px;
+    height: 450px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
@@ -32,13 +61,26 @@ button{
 .input {
     background: white;
     color: black;
-    font-size: 20px;
+    border-radius: 8px;
+    border: solid 1px black;
+    text-align: right;;
+    font-size: 30px;
+    font-weight: bold;
     grid-row: 1/1;
     grid-column: 1/span 4;
 }
 
 .equal {
-    background: rgb(52, 82, 255);
+    border-radius: 8px;
+    background: rgb(53, 53, 53);
     grid-row: 6/6;
     grid-column: 1/span 4;
+}
+
+.equal:hover {
+    background-color:rgb(128, 40, 250);
+}
+
+.equal:active {
+    background-color: rgb(192, 167, 255);
 }
